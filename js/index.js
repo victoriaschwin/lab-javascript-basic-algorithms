@@ -113,3 +113,29 @@ function checkPalindrome(string){
 }
 
 checkPalindrome(phraseToCheck)
+
+//Extra Class
+
+let operacion = prompt('Escribe que operacion quieres hacer');
+let primerNumero = prompt('Escribe tu primer valor');
+let segundoNumero = prompt('Escribe tu segundo valor')
+
+function operacionMatematica(a, b){
+
+  let newFirstNumber = a*1;
+  let newSecondNumber = b*1;
+  if (operacion === 'suma' || '+' || 'sumar'){
+   return newFirstNumber+newSecondNumber;
+  } else if ( operacion === 'resta' || '-' || 'restar' ){
+   return newFirstNumber-newSecondNumber;
+  } else if (operacion === 'multiplica' || '*' || 'multiplicar' || 'x'){
+   return newFirstNumber*newSecondNumber;
+  }else if (operacion === 'divide' || '/' || 'dividir'){
+   return newFirstNumber/newSecondNumber;
+  }
+
+ return  resultado;
+}
+
+let resultadoOperacion = operacionMatematica(primerNumero,segundoNumero)
+alert(resultadoOperacion)
